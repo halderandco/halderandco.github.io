@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Halder & Co. is a reliable trading firm in Topsia, Kolkata offering quality plywood, laminates, decorative panels, adhesives and veneer at competitive rates for interior professionals.">
 
-<title>Halder & Co. | Quality Interior Materials at Competitive Rates | Topsia, Kolkata</title>
+<title>Halder & Co. | Premium Interior Materials Tailored to Your Needs | Topsia, Kolkata</title>
 
 <link rel="icon" href="34391.png">
 
@@ -716,6 +716,48 @@ body {
   box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
 }
 
+/* ================= GOLD GRADIENT TEXT FOR #1F3D2B SECTIONS ================= */
+.hero, .top-bar, .footer {
+  --gold-start: #e3cda5;
+  --gold-end: #a0784e;
+}
+
+/* Fallback solid color for browsers without background-clip support */
+.hero h1, .hero h2, .hero h3, .hero h4, .hero p, .hero a, .hero div:not(.hero-logo):not(.hero-content), .hero span,
+.top-bar h1, .top-bar h2, .top-bar h3, .top-bar h4, .top-bar p, .top-bar a, .top-bar div, .top-bar span,
+.footer h1, .footer h2, .footer h3, .footer h4, .footer p, .footer a, .footer div, .footer span {
+  color: var(--gold-start);
+}
+
+/* Gradient text effect */
+.hero h1, .hero h2, .hero h3, .hero h4, .hero p, .hero a, .hero div:not(.hero-logo):not(.hero-content), .hero span,
+.top-bar h1, .top-bar h2, .top-bar h3, .top-bar h4, .top-bar p, .top-bar a, .top-bar div, .top-bar span,
+.footer h1, .footer h2, .footer h3, .footer h4, .footer p, .footer a, .footer div, .footer span {
+  background: linear-gradient(135deg, var(--gold-start), var(--gold-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Keep icons and font-awesome elements white / original color */
+.hero i, .hero .fa, .hero .fas, .hero .fab, 
+.top-bar i, .top-bar .fa, .top-bar .fas, .top-bar .fab,
+.footer i, .footer .fa, .footer .fas, .footer .fab {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  color: white !important;
+}
+
+/* Ensure hover on links preserves gradient */
+.hero a:hover, .top-bar a:hover, .footer a:hover {
+  background: linear-gradient(135deg, var(--gold-start), var(--gold-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: underline;
+}
+
 /* ================= PRINT/WATERMARK STYLES ================= */
 @media print {
   body::before {
@@ -967,8 +1009,8 @@ body {
   <div class="hero-content">
     <img src="34391.png" class="hero-logo" alt="Halder & Co Logo">
     <h1>HALDER & CO.</h1>
-    <div class="hero-tagline" id="tagline">Quality Interior Materials at Competitive Rates</div>
-    <div class="hero-products" id="products-list">Plywood • Laminates • Decorative Panels • Adhesives • Veneer</div>
+    <div class="hero-tagline" id="tagline">Premium Interior Materials Tailored to Your Needs</div>
+    <div class="hero-products" id="products-list">Plywood • Laminates • Decorative Panels • Adhesives • Veneer & More</div>
   </div>
 </section>
 
@@ -1008,7 +1050,7 @@ body {
 <!-- Products Section -->
 <section class="section" id="products-section">
   <div class="container">
-    <h2 class="section-title" id="productTitle">Quality Materials We Supply</h2>
+    <h2 class="section-title" id="productTitle">We Supply Quality Materials</h2>
     <p class="section-subtitle" id="productSubtitle">Reliable interior materials selected for durability, performance, and value</p>
     
     <div class="products-grid">
@@ -1017,7 +1059,7 @@ body {
           <i class="fas fa-th-large"></i>
         </div>
         <div class="product-content">
-          <h3 id="p1">Commercial Plywood</h3>
+          <h3 id="p1">Plywood & other Engineered Boards</h3>
           <p id="p1-desc">Dependable plywood options suitable for various interior applications, furniture work, and cabinetry needs.</p>
         </div>
       </div>
@@ -1051,6 +1093,17 @@ body {
           <p id="p4-desc">Quality wood veneers and finishing materials to enhance the look and durability of your projects.</p>
         </div>
       </div>
+
+      <!-- New additional product card as requested -->
+      <div class="product-card">
+        <div class="product-icon">
+          <i class="fas fa-cubes"></i>
+        </div>
+        <div class="product-content">
+          <h3 id="p5">Beyond Our Core Range — Sourcing All Relevant Products for You</h3>
+          <p id="p5-desc">Custom sourcing for all your interior material needs, ensuring you get exactly what your project requires.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1074,7 +1127,7 @@ body {
         <div class="value-icon">
           <i class="fas fa-clock"></i>
         </div>
-        <h4 id="a2">Convenient & Timely</h4>
+        <h4 id="a2">Seamless & Timely Service</h4>
         <p id="ad2">We arrange prompt delivery across Kolkata and suburbs, understanding that your time and project schedules matter.</p>
       </div>
       
@@ -1218,7 +1271,7 @@ body {
       <div class="footer-brand">
         <img src="343912.png" alt="Halder & Co. Circular Logo" class="footer-circular-logo">
         <h3>HALDER & CO.</h3>
-        <p id="footerTagline">Quality interior materials at competitive rates for Kolkata</p>
+        <p id="footerTagline">Premium Interior Materials Tailored to Your Needs</p>
       </div>
       
       <div class="footer-links">
@@ -1305,14 +1358,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Language content - Updated with hyperlinked address
+// Language content - Updated with all new text and additional product card
 const content = {
   en: {
-    tagline: "Quality Interior Materials at Competitive Rates",
-    "products-list": "Plywood • Laminates • Decorative Panels • Adhesives • Veneer",
+    tagline: "Premium Interior Materials Tailored to Your Needs",
+    "products-list": "Plywood • Laminates • Decorative Panels • Adhesives • Veneer & More",
     aboutTitle: "Welcome to Halder & Co.",
     aboutSubtitle: "A fresh, value-driven approach to interior material supply in Kolkata",
-    // Updated aboutText for English
     aboutText: "A customer-focused business in Topsia, Kolkata, Halder & Co. brings together quality interior materials, competitive pricing, and reliable service. We understand the needs of Kolkata's trade professionals and individual customers, providing materials that deliver both performance and value.",
     qualityTitle: "Competitive Rates",
     qualityDesc: "We offer fair, transparent pricing that respects your budget without compromising on material quality",
@@ -1320,9 +1372,9 @@ const content = {
     communicationDesc: "Serving carpenters, contractors, interior designers, and end users with equal dedication",
     deliveryTitle: "Timely Delivery",
     deliveryDesc: "Convenient delivery across Kolkata and nearby suburbs to keep your projects on schedule",
-    productTitle: "Quality Materials We Supply",
+    productTitle: "We Supply Quality Materials",
     productSubtitle: "Reliable interior materials selected for durability, performance, and value",
-    p1: "Commercial Plywood",
+    p1: "Plywood & other Engineered Boards",
     "p1-desc": "Dependable plywood options suitable for various interior applications, furniture work, and cabinetry needs.",
     p2: "Laminates & Decorative Sheets",
     "p2-desc": "Contemporary laminates and decorative panels in practical finishes and colors for modern interiors.",
@@ -1330,11 +1382,13 @@ const content = {
     "p3-desc": "Effective bonding solutions that ensure strong, lasting results for all your installation needs.",
     p4: "Veneer & Surface Finishes",
     "p4-desc": "Quality wood veneers and finishing materials to enhance the look and durability of your projects.",
+    p5: "Beyond Our Core Range — Sourcing All Relevant Products for You",
+    "p5-desc": "Custom sourcing for all your interior material needs, ensuring you get exactly what your project requires.",
     approachTitle: "How We Work With You",
     approachSubtitle: "A practical approach designed for Kolkata's trade professionals and homeowners",
     a1: "Value-Focused Pricing",
     ad1: "We provide competitive rates that make quality interior materials accessible to all customers, from professionals to homeowners.",
-    a2: "Convenient & Timely",
+    a2: "Seamless & Timely Service",
     ad2: "We arrange prompt delivery across Kolkata and suburbs, understanding that your time and project schedules matter.",
     a3: "Direct & Clear Communication",
     ad3: "Straightforward dealings with clear pricing and specifications, making your material selection process simple and efficient.",
@@ -1357,7 +1411,7 @@ const content = {
     productLabel: "Material Interest",
     messageLabel: "Your Requirements",
     submitBtn: "Request Quote",
-    footerTagline: "Quality interior materials at competitive rates for Kolkata",
+    footerTagline: "Premium Interior Materials Tailored to Your Needs",
     footerLinksTitle: "Quick Links",
     footerHome: "Home",
     footerAbout: "About Us",
@@ -1368,7 +1422,7 @@ const content = {
   },
   bn: {
     tagline: "প্রতিযোগিতামূলক মূল্যে মানসম্পন্ন ইন্টেরিয়র সামগ্রী",
-    "products-list": "প্লাইউড • ল্যামিনেট • সাজসজ্জার প্যানেল • আঠা • ভিনিয়ার",
+    "products-list": "প্লাইউড • ল্যামিনেট • সাজসজ্জার প্যানেল • আঠা • ভিনিয়ার এবং আরও",
     aboutTitle: "হালদার অ্যান্ড কোং-এ স্বাগতম",
     aboutSubtitle: "কলকাতায় ইন্টেরিয়র সামগ্রী সরবরাহে একটি নতুন, মূল্য-ভিত্তিক পদ্ধতি",
     aboutText: "কলকাতার টপসিয়ায় একটি নতুন, গ্রাহক-কেন্দ্রিক ব্যবসা হিসেবে, হালদার অ্যান্ড কোং মানসম্পন্ন ইন্টেরিয়র সামগ্রী, প্রতিযোগিতামূলক মূল্য এবং নির্ভরযোগ্য পরিষেবা নিয়ে আসে। আমরা কলকাতার ব্যবসায়িক পেশাদার এবং ব্যক্তিগত গ্রাহকদের চাহিদা বুঝি, এমন সামগ্রী সরবরাহ করি যা কর্মক্ষমতা এবং মূল্য উভয়ই প্রদান করে।",
@@ -1380,7 +1434,7 @@ const content = {
     deliveryDesc: "আপনার প্রকল্পগুলি সময়সূচিতে রাখতে কলকাতা এবং নিকটবর্তী শহরতলিতে সুবিধাজনক ডেলিভারি",
     productTitle: "আমরা যে মানসম্পন্ন সামগ্রী সরবরাহ করি",
     productSubtitle: "স্থায়িত্ব, কর্মক্ষমতা এবং মূল্যের জন্য নির্বাচিত নির্ভরযোগ্য ইন্টেরিয়র সামগ্রী",
-    p1: "বাণিজ্যিক প্লাইউড",
+    p1: "প্লাইউড ও অন্যান্য ইঞ্জিনিয়ার্ড বোর্ড",
     "p1-desc": "বিভিন্ন ইন্টেরিয়র প্রয়োগ, ফার্নিচার কাজ এবং ক্যাবিনেটরি প্রয়োজনের জন্য উপযুক্ত নির্ভরযোগ্য প্লাইউড বিকল্প।",
     p2: "ল্যামিনেট ও সাজসজ্জার শীট",
     "p2-desc": "আধুনিক ইন্টেরিয়রের জন্য ব্যবহারিক ফিনিশ এবং রঙে সমসাময়িক ল্যামিনেট এবং সজ্জাসংক্রান্ত প্যানেল।",
@@ -1388,6 +1442,8 @@ const content = {
     "p3-desc": "কার্যকর বন্ধন সমাধান যা আপনার সকল ইনস্টলেশন প্রয়োজনের জন্য শক্তিশালী, দীর্ঘস্থায়ী ফলাফল নিশ্চিত করে।",
     p4: "ভিনিয়ার ও পৃষ্ঠ ফিনিশ",
     "p4-desc": "আপনার প্রকল্পগুলির চেহারা এবং স্থায়িত্ব বাড়াতে মানসম্পন্ন কাঠের ভিনিয়ার এবং ফিনিশিং সামগ্রী।",
+    p5: "আমাদের মূল পরিসরের বাইরে — আপনার জন্য সমস্ত প্রাসঙ্গিক পণ্য সংগ্রহ",
+    "p5-desc": "আপনার সমস্ত ইন্টেরিয়র সামগ্রীর প্রয়োজনীয়তার জন্য কাস্টম সোর্সিং, নিশ্চিত করে যে আপনি আপনার প্রকল্পের জন্য ঠিক যা প্রয়োজন তা পান।",
     approachTitle: "আমরা আপনার সাথে কীভাবে কাজ করি",
     approachSubtitle: "কলকাতার ব্যবসায়িক পেশাদার এবং গৃহমালিকদের জন্য ডিজাইন করা একটি ব্যবহারিক পদ্ধতি",
     a1: "মূল্য-ভিত্তিক মূল্য নির্ধারণ",
@@ -1426,7 +1482,7 @@ const content = {
   },
   hi: {
     tagline: "प्रतिस्पर्धी दरों पर गुणवत्तापूर्ण इंटीरियर सामग्री",
-    "products-list": "प्लाईवुड • लैमिनेट • सजावटी पैनल • चिपकने वाला • विनियर",
+    "products-list": "प्लाईवुड • लैमिनेट • सजावटी पैनल • चिपकने वाला • विनियर और अधिक",
     aboutTitle: "हलदर एंड कंपनी में आपका स्वागत है",
     aboutSubtitle: "कोलकाता में इंटीरियर सामग्री आपूर्ति का एक नया, मूल्य-संचालित दृष्टिकोण",
     aboutText: "कोलकाता के टोपसिया में एक नए, ग्राहक-केंद्रित व्यवसाय के रूप में, हलदर एंड कंपनी गुणवत्तापूर्ण इंटीरियर सामग्री, प्रतिस्पर्धी मूल्य निर्धारण और विश्वसनीय सेवा को एक साथ लाती है। हम कोलकाता के व्यापार पेशेवरों और व्यक्तिगत ग्राहकों की जरूरतों को समझते हैं, ऐसी सामग्री प्रदान करते हैं जो प्रदर्शन और मूल्य दोनों प्रदान करती है।",
@@ -1438,7 +1494,7 @@ const content = {
     deliveryDesc: "आपकी परियोजनाओं को शेड्यूल पर रखने के लिए कोलकाता और आसपास के उपनगरों में सुविधाजनक वितरण",
     productTitle: "गुणवत्तापूर्ण सामग्री जो हम आपूर्ति करते हैं",
     productSubtitle: "टिकाऊपन, प्रदर्शन और मूल्य के लिए चयनित विश्वसनीय इंटीरियर सामग्री",
-    p1: "वाणिज्यिक प्लाईवुड",
+    p1: "प्लाईवुड और अन्य इंजीनियर्ड बोर्ड",
     "p1-desc": "विभिन्न इंटीरियर अनुप्रयोगों, फर्नीचर कार्य और कैबिनेटरी आवश्यकताओं के लिए उपयुक्त विश्वसनीय प्लाईवुड विकल्प।",
     p2: "लैमिनेट और सजावटी शीट",
     "p2-desc": "आधुनिक इंटीरियर के लिए व्यावहारिक फिनिश और रंगों में समकालीन लैमिनेट और सजावटी पैनल।",
@@ -1446,6 +1502,8 @@ const content = {
     "p3-desc": "प्रभावी बंधन समाधान जो आपकी सभी स्थापना आवश्यकताओं के लिए मजबूत, स्थायी परिणाम सुनिश्चित करते हैं।",
     p4: "विनियर और सतह खत्म",
     "p4-desc": "आपकी परियोजनाओं की उपस्थिति और स्थायित्व को बढ़ाने के लिए गुणवत्ता वाली लकड़ी के विनियर और फिनिशिंग सामग्री।",
+    p5: "हमारी मुख्य श्रेणी से परे — आपके लिए सभी प्रासंगिक उत्पादों की सोर्सिंग",
+    "p5-desc": "आपकी सभी इंटीरियर सामग्री आवश्यकताओं के लिए कस्टम सोर्सिंग, यह सुनिश्चित करते हुए कि आपको वही मिले जो आपकी परियोजना के लिए आवश्यक है।",
     approachTitle: "हम आपके साथ कैसे काम करते हैं",
     approachSubtitle: "कोलकाता के व्यापार पेशेवरों और गृहस्वामियों के लिए डिज़ाइन की गई एक व्यावहारिक प्रक्रिया",
     a1: "मूल्य-केंद्रित मूल्य निर्धारण",
