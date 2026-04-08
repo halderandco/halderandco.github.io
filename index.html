@@ -758,10 +758,16 @@ body {
   text-decoration: underline;
 }
 
-/* ================= FONT UPDATE FOR #1F3D2B SECTIONS ================= */
-/* Apply Cormorant Garamond to all text in top-bar, hero, and footer */
+/* ================= FONT UPDATE FOR #1F3D2B SECTIONS (NUMBERS → GARAMOND) ================= */
+@font-face {
+  font-family: 'GaramondDigits';
+  src: local('Garamond'), local('Garamond Regular'), local('Times New Roman');
+  unicode-range: U+30-39; /* digits 0-9 only */
+}
+
+/* Apply Cormorant Garamond to all text, but digits use Garamond via unicode-range */
 .top-bar, .hero, .footer {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "GaramondDigits", serif;
 }
 
 /* Reset icons to their original font family */
@@ -770,6 +776,12 @@ body {
 .top-bar .fas, .hero .fas, .footer .fas,
 .top-bar .fab, .hero .fab, .footer .fab {
   font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
+}
+
+/* ================= WATERMARK BACKGROUND REPLACEMENT (overrides original #1f3d2b) ================= */
+.top-bar, .hero, .footer {
+  background: url('343913.png') center / cover no-repeat !important;
+  background-color: transparent !important;
 }
 
 /* ================= PRINT/WATERMARK STYLES ================= */
