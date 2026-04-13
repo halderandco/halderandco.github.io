@@ -1083,8 +1083,8 @@ body {
           <i class="fas fa-layer-group"></i>
         </div>
         <div class="product-content">
-          <h3 id="p2">Laminates & Decorative Sheets</h3>
-          <p id="p2-desc">Contemporary laminates and decorative panels in practical finishes and colors for modern interiors.</p>
+          <h3 id="p2">Laminates</h3>
+          <p id="p2-desc">High-quality contemporary laminates designed for durability and style. Available in a wide range of textures, finishes, and colors, they offer practical yet elegant solutions for modern interior spaces.</p>
         </div>
       </div>
       
@@ -1108,7 +1108,18 @@ body {
         </div>
       </div>
 
-      <!-- New additional product card as requested -->
+      <!-- NEW: Decorative Panels card added just before Curated Sourcing -->
+      <div class="product-card">
+        <div class="product-icon">
+          <i class="fas fa-palette"></i>
+        </div>
+        <div class="product-content">
+          <h3 id="p6">Decorative Panels</h3>
+          <p id="p6-desc">A premium range of decorative panels that elevate interiors with striking design and versatile finishes, adding depth and refined sophistication to any space.</p>
+        </div>
+      </div>
+
+      <!-- Existing Curated Sourcing card (now after Decorative Panels) -->
       <div class="product-card">
         <div class="product-icon">
           <i class="fas fa-cubes"></i>
@@ -1373,7 +1384,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Language content - Updated with refined Hindi and Bengali translations
+// Language content - Updated with new laminates text, decorative panels text, and accurate translations
 const content = {
   en: {
     tagline: "Premium Interior Materials Tailored to Your Needs",
@@ -1391,14 +1402,16 @@ const content = {
     productSubtitle: "Reliable interior materials selected for durability, performance, and value",
     p1: "Plywood & other Engineered Boards",
     "p1-desc": "Dependable plywood options suitable for various interior applications, furniture work, and cabinetry needs.",
-    p2: "Laminates & Decorative Sheets",
-    "p2-desc": "Contemporary laminates and decorative panels in practical finishes and colors for modern interiors.",
+    p2: "Laminates",
+    "p2-desc": "High-quality contemporary laminates designed for durability and style. Available in a wide range of textures, finishes, and colors, they offer practical yet elegant solutions for modern interior spaces.",
     p3: "Adhesives & Bonding Materials",
     "p3-desc": "Effective bonding solutions that ensure strong, lasting results for all your installation needs.",
     p4: "Veneer & Surface Finishes",
     "p4-desc": "Quality wood veneers and finishing materials to enhance the look and durability of your projects.",
     p5: "Curated Sourcing, Beyond Limits",
     "p5-desc": "Custom sourcing for all your interior material needs, ensuring you get exactly what your project requires.",
+    p6: "Decorative Panels",
+    "p6-desc": "A premium range of decorative panels that elevate interiors with striking design and versatile finishes, adding depth and refined sophistication to any space.",
     approachTitle: "How We Work With You",
     approachSubtitle: "A practical approach designed for Kolkata's trade professionals and homeowners",
     a1: "Value-Focused Pricing",
@@ -1451,14 +1464,16 @@ const content = {
     productSubtitle: "স্থায়িত্ব, কর্মক্ষমতা ও মূল্যের ভিত্তিতে নির্বাচিত নির্ভরযোগ্য ইন্টেরিয়র সামগ্রী।",
     p1: "প্লাইউড ও অন্যান্য ইঞ্জিনিয়ার্ড বোর্ড",
     "p1-desc": "আসবাবপত্র ও কেবিনেট্রি সহ বিভিন্ন ইন্টেরিয়র কাজের জন্য নির্ভরযোগ্য প্লাইউডের বিকল্প।",
-    p2: "ল্যামিনেট ও ডেকোরেটিভ শীট",
-    "p2-desc": "আধুনিক ইন্টেরিয়রের জন্য ব্যবহারিক ফিনিশ ও রঙে সমসাময়িক ল্যামিনেট ও সাজসজ্জার প্যানেল।",
+    p2: "ল্যামিনেট",
+    "p2-desc": "উচ্চ-মানের সমসাময়িক ল্যামিনেট যা স্থায়িত্ব ও শৈলীর জন্য ডিজাইন করা। বিস্তৃত টেক্সচার, ফিনিশ এবং রঙে উপলব্ধ, এগুলি আধুনিক অভ্যন্তরীণ স্থানের জন্য ব্যবহারিক তবুও মার্জিত সমাধান প্রদান করে।",
     p3: "আঠা ও বন্ধন সামগ্রী",
     "p3-desc": "কার্যকর বন্ধন সমাধান যা আপনার সব ইনস্টলেশনের জন্য শক্তিশালী ও দীর্ঘস্থায়ী ফলাফল নিশ্চিত করে।",
     p4: "ভিনিয়ার ও সারফেস ফিনিশ",
     "p4-desc": "আপনার প্রকল্পের সৌন্দর্য ও স্থায়িত্ব বাড়াতে মানসম্পন্ন কাঠের ভিনিয়ার ও ফিনিশিং উপকরণ।",
     p5: "কিউরেটেড সোর্সিং, সীমাহীন সম্ভাবনা",
     "p5-desc": "আপনার সব ইন্টেরিয়র সামগ্রীর চাহিদা অনুযায়ী কাস্টম সোর্সিং, যাতে আপনি আপনার প্রকল্পের জন্য ঠিক যা প্রয়োজন তা পান।",
+    p6: "সজ্জা প্যানেল (ডেকোরেটিভ প্যানেল)",
+    "p6-desc": "প্রিমিয়াম মানের সাজসজ্জার প্যানেল যা আকর্ষণীয় নকশা ও বহুমুখী ফিনিশের মাধ্যমে অভ্যন্তরীণ স্থানকে উন্নত করে, যে কোনো জায়গায় গভীরতা ও পরিশীলিত আভা যোগ করে।",
     approachTitle: "আমরা আপনার সাথে যেভাবে কাজ করি",
     approachSubtitle: "কলকাতার ব্যবসায়িক পেশাদার ও গৃহমালিকদের জন্য তৈরি একটি ব্যবহারিক প্রক্রিয়া",
     a1: "মূল্য-কেন্দ্রিক মূল্য নির্ধারণ",
@@ -1511,14 +1526,16 @@ const content = {
     productSubtitle: "टिकाऊपन, प्रदर्शन और मूल्य के लिए चयनित विश्वसनीय इंटीरियर सामग्री।",
     p1: "प्लाईवुड और अन्य इंजीनियर्ड बोर्ड",
     "p1-desc": "फर्नीचर और कैबिनेटरी सहित विभिन्न इंटीरियर कार्यों के लिए विश्वसनीय प्लाईवुड विकल्प।",
-    p2: "लैमिनेट और सजावटी शीट",
-    "p2-desc": "आधुनिक इंटीरियर के लिए व्यावहारिक फिनिश और रंगों में समकालीन लैमिनेट और सजावटी पैनल।",
+    p2: "लैमिनेट",
+    "p2-desc": "उच्च-गुणवत्ता वाले समकालीन लैमिनेट जो स्थायित्व और शैली के लिए डिज़ाइन किए गए हैं। बनावट, फिनिश और रंगों की विस्तृत श्रृंखला में उपलब्ध, ये आधुनिक आंतरिक स्थानों के लिए व्यावहारिक फिर भी सुरुचिपूर्ण समाधान प्रदान करते हैं।",
     p3: "चिपकने वाला और बॉन्डिंग सामग्री",
     "p3-desc": "प्रभावी बॉन्डिंग समाधान जो आपकी सभी स्थापना आवश्यकताओं के लिए मजबूत और लंबे समय तक चलने वाले परिणाम सुनिश्चित करते हैं।",
     p4: "विनियर और सतह फिनिश",
     "p4-desc": "आपकी परियोजनाओं की सुंदरता और स्थायित्व बढ़ाने के लिए गुणवत्तापूर्ण लकड़ी के विनियर और फिनिशिंग सामग्री।",
     p5: "क्यूरेटेड सोर्सिंग, असीमित संभावनाएँ",
     "p5-desc": "आपकी सभी इंटीरियर सामग्री आवश्यकताओं के लिए कस्टम सोर्सिंग, यह सुनिश्चित करते हुए कि आपको आपकी परियोजना के लिए वही मिले जो चाहिए।",
+    p6: "सजावटी पैनल (डेकोरेटिव पैनल)",
+    "p6-desc": "प्रीमियम रेंज के सजावटी पैनल जो शानदार डिजाइन और बहुमुखी फिनिश के साथ अंदरूनी हिस्सों को निखारते हैं, किसी भी स्थान में गहराई और परिष्कृत सुंदरता जोड़ते हैं।",
     approachTitle: "हम आपके साथ कैसे काम करते हैं",
     approachSubtitle: "कोलकाता के व्यापार पेशेवरों और गृहस्वामियों के लिए डिज़ाइन की गई एक व्यावहारिक प्रक्रिया",
     a1: "मूल्य-केंद्रित मूल्य निर्धारण",
